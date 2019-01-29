@@ -9,7 +9,7 @@ if (isset($_SESSION['name']) && isset($_SESSION['email']) && isset($_SESSION['pa
 <div class="content-wrapper">
   <h2>会員登録</h2>
   <p><?php echo $error_message; ?></p>
-  <form method="post" action="register.php">
+  <form method="post" action="register_form.php">
     <label for="name">名前</label>
     <input type="text" name="name" value="<?php if (isset($name)) echo $name; ?>">
     <label for="email">メールアドレス</label>
