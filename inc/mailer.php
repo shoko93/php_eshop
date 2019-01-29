@@ -1,8 +1,8 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
-require '../vendor/phpmailer/src/PHPMailer.php';
-require '../vendor/phpmailer/src/Exception.php';
-require '../vendor/phpmailer/src/SMTP.php';
+require __DIR__ . '/../vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require __DIR__ . '/../vendor/phpmailer/phpmailer/src/Exception.php';
+require __DIR__ . '/../vendor/phpmailer/phpmailer/src/SMTP.php';
 
 $mail = new PHPMailer;
 $mail -> CharSet = "UTF-8";
