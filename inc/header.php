@@ -12,7 +12,7 @@
         <li><a href="/index.php">Home</a></li>
         <li><a href="/cart.php">Cart</a></li>
       <?php if (isset($_SESSION['login'])): ?>
-        <li><a href="/user_info">Account</a></li>
+        <li><a href="/user_info.php">Account</a></li>
         <li><a href="/logout.php">Log out</a></li>
       <?php else: ?>
         <li><a href="/login.php">Log in</a></li>
