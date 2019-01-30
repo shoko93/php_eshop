@@ -25,7 +25,7 @@ if (isset($_POST['delete']) || isset($_POST['update'])) {
       <input type="submit" name="update" value="注文数を更新">
     </div>
   </form>
-  <p><a href="/order_branch.php">購入手続きに進む</a></p>
+  <p><a href="/order/order_branch.php">購入手続きに進む</a></p>
 </div>
 <?php
 require_once __DIR__ . '/../inc/footer.php';
