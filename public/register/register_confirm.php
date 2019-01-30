@@ -1,12 +1,12 @@
 <?php
-require_once __DIR__ . '/../inc/bootstrap.php';
+require_once __DIR__ . '/../../inc/bootstrap.php';
 
 if (isset($_SESSION['name'])) {
     $name = $_SESSION['name'];
     $email = $_SESSION['email'];
     $pass = $_SESSION['pass'];
 } else {
-    header('location:register.php');
+    header('Location: /register/register.php');
 }
 ?>
 <div class="content-wrapper">
@@ -20,5 +20,5 @@ if (isset($_SESSION['name'])) {
   </form>
 </div>
 <?php
-require_once __DIR__ . '/../inc/footer.php';
+require_once __DIR__ . '/../../inc/footer.php';
 ?>

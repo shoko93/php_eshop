@@ -1,9 +1,9 @@
 <?php
-require_once __DIR__ . '/../inc/bootstrap.php';
-require_once __DIR__ . '/../procedures/processRegister.php';
+require_once __DIR__ . '/../../inc/bootstrap.php';
+require_once __DIR__ . '/../../procedures/processRegister.php';
 
 if (isset($_SESSION['name']) && isset($_SESSION['email']) && isset($_SESSION['pass'])) {
-    header('Location: register_confirm.php');
+    header('Location: /register/register_confirm.php');
 }
 ?>
 <div class="content-wrapper">
@@ -20,5 +20,5 @@ if (isset($_SESSION['name']) && isset($_SESSION['email']) && isset($_SESSION['pa
   </form>
 </div>
 <?php
-require_once __DIR__ . '/../inc/footer.php';
+require_once __DIR__ . '/../../inc/footer.php';
 ?>
