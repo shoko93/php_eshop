@@ -29,6 +29,7 @@ if (isset($_POST['new_email_confirm'])) {
         echo '<h2>メールアドレスを変更しました</h2>';
         echo '<p>' . $_SESSION['new_email'] . '</p>';
         unset($_SESSION['new_email']);
+        require_once __DIR__ . '/../../inc/footer.php';
         exit();
     } else {
         $error_msg = 'パスワードが間違っています。';
