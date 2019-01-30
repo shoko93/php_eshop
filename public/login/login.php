@@ -1,8 +1,8 @@
 <?php
-require_once __DIR__ . '/../inc/bootstrap.php';
-require_once __DIR__ . '/../procedures/doLogin.php';
+require_once __DIR__ . '/../../inc/bootstrap.php';
+require_once __DIR__ . '/../../procedures/doLogin.php';
 if (isset($_SESSION['login'])) {
-    header('Location: index.php');
+    header('Location: /user/user_info.php');
 }
 ?>
 <div class="content-wrapper">
@@ -17,5 +17,5 @@ if (isset($_SESSION['login'])) {
   </form>
 </div>
 <?php
-require_once __DIR__ . '/../inc/footer.php';
+require_once __DIR__ . '/../../inc/footer.php';
 ?>
