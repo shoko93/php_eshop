@@ -1,8 +1,8 @@
 <?php
-require_once __DIR__ . '/../inc/bootstrap.php';
+require_once __DIR__ . '/../../inc/bootstrap.php';
 
 if (empty($_SESSION['address'])) {
-    header('location:order_form.php');
+    header('Location: /order/order_form.php');
 }
 
 $name = $_SESSION['name'];
@@ -29,10 +29,10 @@ $payment = $_SESSION['payment'];
   <p>お支払方法</p>
   <p><?php echo PAYMENT[$payment]; ?></p>
   <form method="post">
-    <input type="submit" formaction="order_complete.php" name="confirm" value="OK">
-    <input type="submit" formaction="order_form.php" name="edit" value="修正">
+    <input type="submit" formaction="/order/order_complete.php" name="confirm" value="OK">
+    <input type="submit" formaction="/order/order_form.php" name="edit" value="修正">
   </form>
 </div>
 <?php
-require_once __DIR__ . '/../inc/footer.php';
+require_once __DIR__ . '/../../inc/footer.php';
 ?>
