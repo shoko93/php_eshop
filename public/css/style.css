@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(40, 30, 180);
+}
+nav li {
+  float: left;
+  width: 20%;
+}
+nav li a {
+  display: block;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: rgb(30, 10, 100);
+}
+/* container */
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+/* search field */
+.search-field {
+  background-color: rgb(40, 30, 180);
+  text-align: center;
+  padding: 15px;
+}
+
+/* product table (index.php) */
+.container table {
+  table-layout: fixed;
+  width: 100%;
+}
+.td-date {
+  width: 20%;
+}
+.td-cat {
+  width: 15%;
+}
+.td-name {
+  width: 50%;
+}
+.td-price {
+  width: 15%;
+  text-align: right;
+}
+/* product details table */
+.details-container {
+  width: 40%;
+  margin: 0 auto;
+}
+.p-label {
+  width: 20%;
+}
+.p-content {
+  text-align: right;
+}
+
+.cart-title {
+    display: inline-block;
+    width: 200px;
+}
+
+
+.cart-quantity {
+  margin-right: 20px;
+  text-align: right;
+}
+
+.content-wrapper {
+  margin-left: 20px;
+}
+
+
+.form-wrapper p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.select-wrapper {
+  margin-bottom: 10px;
+}
+
+.address {
+  width: 200px;
+}
+
+.postcode1, .postcode2 {
+  width: 50px;
+}
+
+.search-field, .filter {
+  margin-bottom: 1.0em;
+}
+
+.td-update-value {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.td-update-label {
+  width: 150px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+input[type="password"], input[type="text"], input[type="checkbox"] {
+  margin-bottom: 1.0em;
+}
+
+
+.payment-method {
+    display: inline-block;
+}
+
+textarea {
+  margin-bottom: 10px;
+}
+
+/* footer */
+footer {
+  margin-top: 2em;
+  text-align: center;
+  background-color: rgb(40, 30, 180);
+}
+footer p {
+  color: white;
+  padding: 15px;
+}
