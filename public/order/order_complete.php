@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/../inc/bootstrap.php';
-require_once __DIR__ . '/../inc/mailer.php';
+require_once __DIR__ . '/../../inc/bootstrap.php';
+require_once __DIR__ . '/../../inc/mailer.php';
 
 $cart = $_SESSION['cart'];
 $quantity = $_SESSION['quantity'];
@@ -17,14 +17,14 @@ if (isset($_POST['confirm'])) {
     $address = $_SESSION['address'];
     $phone = $_SESSION['phone'];
     $payment = $_SESSION['payment'];
-    require_once __DIR__ . '/../procedures/processCustomerOrder.php';
+    require_once __DIR__ . '/../../procedures/processCustomerOrder.php';
 }
 
 if (isset($_POST['user_order_confirm'])) {
-    require_once __DIR__ . '/../procedures/processUserOrder.php';
+    require_once __DIR__ . '/../../procedures/processUserOrder.php';
 }
 
-require_once __DIR__ . '/../procedures/processOrder.php';
+require_once __DIR__ . '/../../procedures/processOrder.php';
 ?>
 <div class="content-wrapper">
   <p>以下の内容で注文を受け付けました。</p>
@@ -39,5 +39,5 @@ require_once __DIR__ . '/../procedures/processOrder.php';
   } ?>
 </div>
 <?php
-require_once __DIR__ . '/../inc/footer.php';
+require_once __DIR__ . '/../../inc/footer.php';
 ?>
