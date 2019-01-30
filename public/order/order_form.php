@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../inc/bootstrap.php';
+require_once __DIR__ . '/../../inc/bootstrap.php';
 
 if (isset($_POST['edit'])) {
     $name = $_SESSION['name'];
@@ -17,7 +17,7 @@ if (isset($_POST['order'])) {
     $prefecture = trim(filter_input(INPUT_POST, 'prefecture', FILTER_SANITIZE_STRING));
     $address = trim(filter_input(INPUT_POST, 'address', FILTER_SANITIZE_STRING));
 
-    require_once __DIR__ . '/../procedures/validateOrder.php';
+    require_once __DIR__ . '/../../procedures/validateOrder.php';
 
     if (empty($name) || empty($email) || empty($postcode) || empty($payment) ||
         empty($prefecture) || empty($address) || empty($phone)) {
@@ -30,7 +30,7 @@ if (isset($_POST['order'])) {
         $_SESSION['address'] = $address;
         $_SESSION['phone'] = $phone;
         $_SESSION['payment'] = $payment;
-        header('location:order_confirm.php');
+        header('Location: /order/order_confirm.php');
         exit();
     }
 }
@@ -76,5 +76,5 @@ if (isset($_POST['order'])) {
   </form>
 </div>
 <?php
-require_once __DIR__ . '/../inc/footer.php';
+require_once __DIR__ . '/../../inc/footer.php';
 ?>
